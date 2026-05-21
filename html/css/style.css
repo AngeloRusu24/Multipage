@@ -1,14 +1,13 @@
-/* --- IMPOSTAZIONI DI BASE E COLORI AZIENDALI (Blu/Tech) --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8fafc; /* Grigio chiarissimo moderno */
-    color: #1e293b; /* Blu notte scuro per i testi */
+    background-color: #f8fafc;
+    color: #1e293b;
 }
 
 header {
-    background-color: #0f172a; /* Sfondo scuro elegante */
+    background-color: #0f172a;
     color: white;
     padding: 15px 30px;
     display: flex;
@@ -19,10 +18,9 @@ header {
 header .logo {
     font-size: 22px;
     font-weight: bold;
-    color: #38bdf8; /* Azzurro tech */
+    color: #38bdf8;
 }
 
-/* --- NAVIGAZIONE --- */
 .menu-principale a {
     color: #94a3b8;
     text-decoration: none;
@@ -32,11 +30,11 @@ header .logo {
 }
 
 .menu-principale a:hover, .menu-principale a.active {
-    color: #38bdf8; /* Evidenzia la pagina corrente o l'hover */
+    color: #38bdf8;
 }
 
 .hamburger {
-    display: none; /* Nascosto su desktop */
+    display: none;
     background: none;
     border: 2px solid #38bdf8;
     color: #38bdf8;
@@ -45,7 +43,6 @@ header .logo {
     border-radius: 4px;
 }
 
-/* --- HERO SECTION DELLA HOME --- */
 .layout-centrale {
     max-width: 1000px;
     margin: 40px auto;
@@ -89,7 +86,6 @@ header .logo {
     background-color: #0ea5e9;
 }
 
-/* --- GRIGLIA SERVIZI (LAYOUT A CARD) --- */
 .servizi-anteprima h2 {
     text-align: center;
     margin-bottom: 30px;
@@ -98,7 +94,7 @@ header .logo {
 
 .griglia-servizi {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colonne su PC */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -145,21 +141,26 @@ header .logo {
 }
 
 footer {
+    background-color: #0f172a;
+    color: #94a3b8;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    color: #64748b;
+    padding: 20px 0;
+    margin-top: 60px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
     font-size: 14px;
 }
 
-/* --- RESPONSIVE DESIGN --- */
 @media (max-width: 768px) {
     .hamburger {
-        display: block; /* Spunta l'hamburger */
+        display: block;
     }
 
     .menu-principale {
-        display: none; /* Nasconde i link estesi */
+        display: none;
         flex-direction: column;
         width: 100%;
         background-color: #0f172a;
@@ -171,7 +172,6 @@ footer {
         z-index: 100;
     }
 
-    /* Classe forzata per aprire il menu con !important */
     .menu-principale.mostraMenu {
         display: flex !important;
     }
@@ -198,7 +198,7 @@ footer {
     }
 
     .griglia-servizi {
-        grid-template-columns: 1fr; /* Una sola colonna su smartphone */
+        grid-template-columns: 1fr;
     }
 
     .hero h1 {
