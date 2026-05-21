@@ -111,20 +111,6 @@ header .logo {
     color: #0f172a;
 }
 
-/*Style titolo sezione prodotti*/
-.titolo-sezione-prodotti {
-    text-align: center;
-    background-color: #38bdf8; /* Colore azzurro tech del logo ADM */
-    color: #ffffff; /* Testo bianco per contrasto ottimale */
-    padding: 18px 30px;
-    margin: 0 auto 40px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 600px; /* Evita che la barra colorata sia eccessivamente lunga su schermi grandi */
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
 /* --- BLOCCO INTERATTIVO JS --- */
 #areaMessaggio {
     margin-top: 30px;
