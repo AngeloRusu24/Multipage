@@ -115,6 +115,20 @@ header .logo {
     color: #0f172a;
 }
 
+/*Style titolo sezione prodotti*/
+.titolo-sezione-prodotti {
+    text-align: center;
+    background-color: #38bdf8; /* Colore azzurro tech del logo ADM */
+    color: #ffffff; /* Testo bianco per contrasto ottimale */
+    padding: 18px 30px;
+    margin: 0 auto 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Evita che la barra colorata sia eccessivamente lunga su schermi grandi */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 /* --- BLOCCO INTERATTIVO JS --- */
 #areaMessaggio {
     margin-top: 30px;
@@ -167,6 +181,22 @@ footer {
         display: block;
     }
 
+    .card-prodotto-orizzontale {
+        flex-direction: column;
+        border-left: none;
+        border-top: 5px solid #38bdf8;
+    }
+
+    .img-prodotto img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .btn-destra {
+        align-self: stretch;
+        text-align: center;
+    }
+
     .griglia-servizi {
         grid-template-columns: 1fr; /* Una sola colonna su smartphone */
     }
@@ -174,4 +204,45 @@ footer {
     .hero h1 {
         font-size: 28px;
     }
+}
+
+/*sezione Card*/
+
+.card-prodotto-orizzontale {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-left: 5px solid #38bdf8;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-prodotto-orizzontale:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+.img-prodotto img {
+    display: block;
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+    flex-grow: 1;
+}
+.info-prodotto h3 {
+    margin-top: 0;
+    color: #0f172a;
+    font-size: 22px;
+}
+
+.info-prodotto p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+.btn-destra {
+    align-self: flex-end;
+    margin-top: 20px;
 }

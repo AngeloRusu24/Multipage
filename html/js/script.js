@@ -2,6 +2,7 @@
 let btnHamburger = document.getElementById("btnHamburger");
 let menuNavigazione = document.getElementById("menuNavigazione");
 
+
 // Gestione dell'apertura/chiusura del menu responsive
 btnHamburger.addEventListener("click", function() {
     menuNavigazione.classList.toggle("mostraMenu");
@@ -20,4 +21,19 @@ btnContatta.addEventListener("click", function() {
     setTimeout(function() {
         window.location.href = "info.html"; // Sposta l'utente sulla pagina Info!
     }, 2000);
+});
+
+//sezione pagina prodotti JS
+
+//Selezioniamo tutti i bottoni "Scopri di più" presenti nelle card
+let bottoniProdotti = document.querySelectorAll(".btn-prodotto");
+
+// Applichiamo un evento click a ciascun bottone dei prodotti
+bottoniProdotti.forEach(function(bottone) {
+    bottone.addEventListener("click", function() {
+        let nomeProdotto = bottone.dataset.nome;
+        
+        // Esempio di interazione
+        alert("Hai richiesto maggiori informazioni per il servizio: " + nomeProdotto + "Questa funzionalità sarà disponibile a breve.");
+    });
 });
